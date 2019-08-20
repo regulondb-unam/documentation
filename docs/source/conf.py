@@ -47,7 +47,6 @@ release = u'0.0.1'
 import sphinx_rtd_theme
 
 extensions = [
-    ...
     "sphinx_rtd_theme",
 ]
 
