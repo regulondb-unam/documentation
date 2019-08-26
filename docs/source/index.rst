@@ -16,8 +16,12 @@ Guide
    :maxdepth: 2
    :caption: Contents:
 
+   
+   MultigenomicModel_Manual_v0.1
    license
    help
+   identifiers
+
 
 
 Indices and tables

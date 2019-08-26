@@ -15,6 +15,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+
+
 html_theme = "sphinx_rtd_theme"
 
 
@@ -48,8 +50,11 @@ import sphinx_rtd_theme
 
 extensions = [
     "sphinx_rtd_theme",
-    "recommonmark"
+    "recommonmark",
+    "sphinx_markdown_tables"
 ]
+
+
 
 html_theme = "sphinx_rtd_theme"
 
@@ -184,5 +189,7 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
+
+# app setup hook
 
 # -- Extension configuration -------------------------------------------------
