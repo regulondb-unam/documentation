@@ -1,47 +1,49 @@
-# Modelo Multigenómico de RegulonDB
+# Multigenomic Model of RegulonDB
 
-## Colecciones
 
-### 1. NombredelaColección
 
-* Descripción
+## Collections
 
-* Atributos
+### 1. ColletionName
 
-  * NombreAtributo
+* Description
 
-  * Sinónimo
+* Attributes
 
-  * Uso:
+  * AttributeName
+
+  * Type
+
+  * Sinonims
+
+  * Usage:
 
     Seleccionar uno de los siguientes valores: [Obligatorio, Recomendado, Opcional]
 
-  * Ejemplo:
+  * Example:
 
       ```xml
-      Ejemplo
+      Example
       ```
 
 
-  * Comentarios  
+  * Comments  
 
 
 
-* Patrón de diseño
+* Desing pattern
 
-* Reglas de validación
+* Validation rules
 
-* Representación gráfica
+* Comments
 
-* Comentarios
-
-* Ejemplo
+* Example
 
 
 ```xml
-Here goes your json object definition
+Example
 ```
 
 
-### Referencias
+### References
 
