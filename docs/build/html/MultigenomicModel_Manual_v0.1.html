@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Modelo Multigenómico de RegulonDB &mdash; RegulonDB Documentation 0.0.1 documentation</title>
+  <title>Multigenomic Model of RegulonDB &mdash; RegulonDB Documentation 0.0.1 documentation</title>
   
 
   
@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="RegulonDB Identifiers" href="identifiers.html" /> 
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="RegulonDB Documentation" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,19 +82,23 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Multigenomic Model of RegulonDB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#collections">Collections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gene">1. gene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colletionname">2. ColletionName</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">3. ColletionName</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">4. ColletionName</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">5. ColletionName</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html#contact">Contact</a></li>
 <li class="toctree-l1"><a class="reference internal" href="help.html">Need help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="identifiers.html">RegulonDB Identifiers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="identifiers.html#entry-identifier">Entry identifier</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Modelo Multigenómico de RegulonDB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#colecciones">Colecciones</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#nombredelacoleccion">1. NombredelaColección</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#referencias">Referencias</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 
             
@@ -139,7 +144,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Modelo Multigenómico de RegulonDB</li>
+      <li>Multigenomic Model of RegulonDB</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -158,50 +163,553 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="modelo-multigenomico-de-regulondb">
-<h1>Modelo Multigenómico de RegulonDB<a class="headerlink" href="#modelo-multigenomico-de-regulondb" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="colecciones">
-<h2>Colecciones<a class="headerlink" href="#colecciones" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="nombredelacoleccion">
-<h3>1. NombredelaColección<a class="headerlink" href="#nombredelacoleccion" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="multigenomic-model-of-regulondb">
+<h1>Multigenomic Model of RegulonDB<a class="headerlink" href="#multigenomic-model-of-regulondb" title="Permalink to this headline">¶</a></h1>
+<p>La información de RegulonDB está organizada y resguardada bajo un modelo de colecciones implementado en MongoDB. Cada una de las colecciones que integran el modelo de datos, representa un objeto biologíco sobre la regulación transcriocional de diferentes organinismos, entre los que destaca <em>Escherichia coli K-12</em>. Cada una de estas colecciones cuenta con una serie de atributos que permiten plasmar e identificar las características que posee un objeto en particular, como gene, producto, operon, entre muchos más.</p>
+<p>A continuación, se describe cada una de las colecciones que conforman el modelo de datos de RegulonDB:</p>
+<div class="section" id="collections">
+<h2>Collections<a class="headerlink" href="#collections" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gene">
+<h3>1. gene<a class="headerlink" href="#gene" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Description</li>
+</ul>
+<p>Esta colección representa al objeto Gene dentro de la regulación transcripcional de un organismo. Un gen posee una serie de propiedades que permiten identificarlo y diferenciarlo de otros, así como de característica que permiten establecer relaciones con otros objetos.</p>
 <ul>
-<li><p class="first">Descripción</p>
-</li>
-<li><p class="first">Atributos</p>
+<li><p class="first">Attributes</p>
 <ul>
-<li><p class="first">NombreAtributo</p>
+<li><p class="first">AttributeName<br />gene_id <br></p>
 </li>
-<li><p class="first">Sinónimo</p>
+<li><p class="first">Type<br />string</p>
 </li>
-<li><p class="first">Uso:</p>
-<p>Seleccionar uno de los siguientes valores: [Obligatorio, Recomendado, Opcional]</p>
+<li><p class="first">Synonyms<br />identifier</p>
 </li>
-<li><p class="first">Ejemplo:</p>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Ejemplo
+<li><p class="first">Usage<br />requerido</p>
+</li>
+<li><p class="first">Example</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>RDBECOLIGN00001
 </pre></div>
 </div>
 </li>
-<li><p class="first">Comentarios</p>
+<li><p class="first">Comments<br />Para conocer más detalle sobre la definición de los identificadores, consultar la sección: Identifiers en el manual de RegulonDB.</p>
+</li>
+<li><p class="first">AttributeName<br />gene_name</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms<br />name</p>
+</li>
+<li><p class="first">Usage:
+Opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>araC
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments<br />En el caso del nombre de genes se sigue una nomenclatura de nombrado donde se define que la última letra se debe especificar en mayúscula.</p>
+</li>
+<li><p class="first">AttributeName<br />gene_posleft</p>
+</li>
+<li><p class="first">Type<br />int</p>
+</li>
+<li><p class="first">Synonyms<br />genome left position</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>70387
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gene_posright</p>
+</li>
+<li><p class="first">Type<br />int</p>
+</li>
+<li><p class="first">Synonyms<br />genome right position</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>71265
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gene_strand</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>forward
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments
+Los valores permitidos para este atributo son: “forward”, “reverse”, null</p>
+</li>
+<li><p class="first">AttributeName<br />gene_sequence</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gc_content</p>
+</li>
+<li><p class="first">Type<br />double</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>52.56
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gene_note</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gene_internal_comment</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />organism_id</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms<br />organism identifier</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />gene_type</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>pseudo
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments
+Los valores permitidos para este atributo son: “pseudo”, “phantom”, null</p>
+</li>
+<li><p class="first">AttributeName<br />centisome_position</p>
+</li>
+<li><p class="first">Type<br />double</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+requerido</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />interrupted</p>
+</li>
+<li><p class="first">Type<br />bool</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />synonyms</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms<br />Identifier</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>RDBECOLIGN00065, RDBECOLIGN10054
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />external_databases</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>ASAP, http://.......
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName<br />schema_version</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments
+Este atributo es usado para controlar internamente las modificaciones que se hagan en la colección, así como con el uso del modelo por parte de la aplicación Web de RegulonDB.</p>
+</li>
+<li><p class="first">AttributeName<br />multifun_parents</p>
+</li>
+<li><p class="first">Type<br />string</p>
+</li>
+<li><p class="first">Synonyms<br />multifun family</p>
+</li>
+<li><p class="first">Usage:
+opcional</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
 </li>
 </ul>
 </li>
-<li><p class="first">Patrón de diseño</p>
+<li><p class="first">Desing patterns</p>
 </li>
-<li><p class="first">Reglas de validación</p>
+<li><p class="first">Comments</p>
 </li>
-<li><p class="first">Representación gráfica</p>
-</li>
-<li><p class="first">Comentarios</p>
-</li>
-<li><p class="first">Ejemplo</p>
+<li><p class="first">Example</p>
 </li>
 </ul>
-<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Here goes your json object definition
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
 </pre></div>
 </div>
 </div>
-<div class="section" id="referencias">
-<h3>Referencias<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="colletionname">
+<h3>2. ColletionName<a class="headerlink" href="#colletionname" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Description</p>
+</li>
+<li><p class="first">Attributes</p>
+<ul>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+<p>Seleccionar uno de los siguientes valores: [Requerido, Opcional]</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+<ul class="simple">
+<li>AttributeName</li>
+</ul>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Desing patterns</p>
+</li>
+<li><p class="first">Validation rules</p>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">Example</p>
+</li>
+</ul>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>3. ColletionName<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Description</p>
+</li>
+<li><p class="first">Attributes</p>
+<ul>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+<p>Seleccionar uno de los siguientes valores: [Requerido, Opcional]</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+<ul class="simple">
+<li>AttributeName</li>
+</ul>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Desing patterns</p>
+</li>
+<li><p class="first">Validation rules</p>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">Example</p>
+</li>
+</ul>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>4. ColletionName<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Description</p>
+</li>
+<li><p class="first">Attributes</p>
+<ul>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+<p>Seleccionar uno de los siguientes valores: [Requerido, Opcional]</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Desing patterns</p>
+</li>
+<li><p class="first">Validation rules</p>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">Example</p>
+</li>
+</ul>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>5. ColletionName<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Description</p>
+</li>
+<li><p class="first">Attributes</p>
+<ul>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+<p>Seleccionar uno de los siguientes valores: [Requerido, Opcional]</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">AttributeName</p>
+</li>
+<li><p class="first">Type</p>
+</li>
+<li><p class="first">Synonyms</p>
+</li>
+<li><p class="first">Usage:</p>
+</li>
+<li><p class="first">Example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Comments</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Desing patterns</p>
+</li>
+<li><p class="first">Validation rules</p>
+</li>
+<li><p class="first">Comments</p>
+</li>
+<li><p class="first">Example</p>
+</li>
+</ul>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>Example
+</pre></div>
+</div>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
@@ -214,8 +722,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="license.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="identifiers.html" class="btn btn-neutral float-left" title="RegulonDB Identifiers" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="RegulonDB Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
