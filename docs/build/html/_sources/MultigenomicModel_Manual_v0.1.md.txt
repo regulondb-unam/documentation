@@ -14,8 +14,8 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
 * Attributes
 
-  * AttributeName  
-    gene_id <br>
+  AttributeName  
+    gene_id
 
 
   * Type  
@@ -36,10 +36,10 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
       ```
 
   * Comments  
-    Para conocer más detalle sobre la definición de los identificadores, consultar la sección: Identifiers en el manual de RegulonDB.
+    Para conocer más detalle sobre la definición de los identificadores, consultar la sección: Identifiers en el manual de RegulonDB.  
 
 
-  * AttributeName  
+  AttributeName  
     gene_name  
 
   * Type  
@@ -58,9 +58,10 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
       ```
 
   * Comments  
-    En el caso del nombre de genes se sigue una nomenclatura de nombrado donde se define que la última letra se debe especificar en mayúscula.
+    En el caso del nombre de genes se sigue una nomenclatura de nombrado donde se define que la última letra se debe especificar en mayúscula.  
 
-  * AttributeName  
+
+  AttributeName  
     gene_posleft
 
   * Type  
@@ -109,7 +110,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     string
 
   * Synonyms  
-  
+
 
   * Usage:
     requerido
@@ -121,9 +122,9 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
       ```
 
   * Comments 
-   Los valores permitidos para este atributo son: "forward", "reverse", null
+      Los valores permitidos para este atributo son: "forward", "reverse", null
 
-  
+
   * AttributeName  
     gene_sequence
 
@@ -132,7 +133,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Synonyms  
     
-
   * Usage:
     requerido
 
@@ -144,7 +144,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Comments 
 
-  
+
   * AttributeName  
     gc_content
 
@@ -153,7 +153,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Synonyms  
     
-
   * Usage:
     requerido
 
@@ -165,7 +164,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Comments 
 
-  
+
   * AttributeName  
     gene_note
 
@@ -173,7 +172,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     string
 
   * Synonyms  
-  
+
 
   * Usage:
     opcional
@@ -194,7 +193,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     string
 
   * Synonyms  
-  
+
 
   * Usage:
     opcional
@@ -235,7 +234,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     string
 
   * Synonyms  
-  
+
 
   * Usage:
     requerido
@@ -257,7 +256,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     double
 
   * Synonyms  
-  
+
 
   * Usage:
     requerido
@@ -278,7 +277,7 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
     bool
 
   * Synonyms  
-  
+
 
   * Usage:
     opcional
@@ -303,7 +302,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -321,7 +319,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Synonyms  
     
-
   * Usage:
     opcional
 
@@ -342,7 +339,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Synonyms  
     
-
   * Usage:
     opcional
 
@@ -376,7 +372,6 @@ Esta colección representa al objeto Gene dentro de la regulación transcripcion
 
   * Comments 
 
-    
 * Desing patterns
 
 * Comments
@@ -415,17 +410,16 @@ Example
 
 
   * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -435,17 +429,16 @@ Example
   * Comments 
 
     * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -495,17 +488,16 @@ Example
 
 
   * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -515,17 +507,16 @@ Example
   * Comments 
 
     * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -575,17 +566,16 @@ Example
 
 
   * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
@@ -635,17 +625,16 @@ Example
 
 
   * AttributeName  
-  
+
 
   * Type  
-  
+
 
   * Synonyms  
-  
+
 
   * Usage:
     
-
   * Example:
 
       ```xml
